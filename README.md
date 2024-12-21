@@ -63,11 +63,15 @@ The application has been Dockerized with the following steps:
 3. **Pushing the Image to Docker Registry**: The built image was pushed to a Docker registry for deployment.
 
 Here is an image showing the process of building the Docker image and pushing it to the Docker registry:
-
+### Docker Build
 ![Docker Build](staticfiles/docker_image_v1.0.png)
+### Docker Login
 ![Docker Login](staticfiles/docker_login.png)
+### Docker Push
 ![Docker push](staticfiles/docker_push_v1.0.png)
+### Docker Image
 ![Docker image](staticfiles/docker_image.png)
+### Docker Image and Tag
 ![Docker image tag](staticfiles/docker_image_tag_v1.0.png)
 
 ## Kubernetes Deployment and Service
@@ -80,8 +84,9 @@ To deploy the Dockerized Django application to Kubernetes, a combined `deploymen
 This combined file simplifies the deployment and service configuration for the Kubernetes cluster.
 
 Here is an image showing the `deployment-service.yaml` file:
-
+### Deployment-service
 ![deployment-service.yaml](staticfiles/minikube_status.png)
+### Verifying the deployments, services and pods 
 ![Verifying the deployments, services and pods](staticfiles/minikube_pods.png)
 
 ## Jenkins Pipeline Script (Jenkinsfile)
@@ -216,7 +221,9 @@ pipeline {
     }
 }
 ```
+### Jenkins Pipeline Status
 ![Jenkins pipeline status](staticfiles/success_pipeline_v1.0.png)
+### Initial Version Output
 ![Intial output](staticfiles/initial_output_v1.0.png)
 
 ## Test the CI/CD Pipeline
@@ -235,11 +242,17 @@ To test the CI/CD pipeline, the following steps were performed:
 4. **Verification**: The deployment was verified by checking the status of the pods and services in the Kubernetes cluster, ensuring the application was correctly deployed.
 
 Here is an image showing the Jenkins pipeline running successfully:
+### Code Updated
 ![Code Updated](staticfiles/code_change.png)
+### Jenkins Pipeline
 ![Jenkins Pipeline](staticfiles/cicd_pipeline.png)
+### Jenkins Pipeline Success
 ![Jenkins Pipeline Success](staticfiles/success_pipeline.png)
+### Docker Hub Image
 ![Docker Hub Image](staticfiles/docker_hub_image.png)
+### Docker Hub Image Tag
 ![Docker Hub Image Tag](staticfiles/docker_hub_tag.png)
+### Final Output
 ![Final Output](staticfiles/final_output.png)
 
 
